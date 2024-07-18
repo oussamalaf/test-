@@ -1,0 +1,98 @@
+
+/* Réinitialisation des styles par défaut */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles de l'en-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Styles du conteneur principal */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles du formulaire */
+form {
+    width: 60%;
+    
+}
+
+/* Styles des groupes de formulaire */
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+/* Styles des étiquettes de formulaire */
+label {
+    display: block;
+    margin-bottom: 5px;
+   
+}
+
+/* Styles des champs de saisie de formulaire */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+/* Styles de la zone de texte de formulaire */
+textarea {
+    resize: none ;
+    
+}
+
+/* Styles du bouton de soumission de formulaire */
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Styles des informations de contact */
+.contact-info {
+    width: 35%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+
+}
+
+/* Styles du titre des informations de contact */
+.contact-info h2 {
+    margin-bottom: 10px;
+}
+
+/* Styles des paragraphes des informations de contact */
+.contact-info p {
+    margin-bottom: 5px;
+}
+
+/* Styles des éléments en gras dans les informations de contact */
+.contact-info strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+

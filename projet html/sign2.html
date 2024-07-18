@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="sign/sign.css">
+    <title>212 Services Login</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="https://www.google.com/" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <span>ou utilisez votre email pour vous inscrire</span>
+                <input type="email" placeholder="Email" id="signup-email">
+                <input type="password" placeholder="Password" id="signup-password">
+                <input type="password" placeholder="rePassword" id="signup-password-confirm">
+                <button >Sign Up </button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="https://www.google.com/" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="https://www.facebook.com/" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <span>ou utilisez votre mot de passe de l'Email</span>
+                <div onsubmit="return login()">
+                    <input type="email" placeholder="Email" id="maill">
+                    <input type="password" placeholder="Password" id="pass">
+                </div>
+                <a href="#">Mot de passe oublié?</a>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Content de te revoir!</h1>
+                    <p>Entrez vos informations personnelles pour utiliser toutes les fonctionnalités du site</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bonjour !</h1>
+                    <p>Inscrivez-vous avec vos informations personnelles pour utiliser toutes les fonctionnalités du site</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <mark>contact us on  <a href="contact.html">212.service</a></mark>
+    </footer>
+    
+    <script src="./sign.js">
+    </script>
+    <script>
+        // Add an event listener to the login form
+        const loginForm = document.querySelector('.sign-in form');
+        loginForm.addEventListener('submit', function(event) {
+            // Call the login function when the form is submitted
+            login(event);
+        });
+    </script>
+    <script>
+        // Add an event listener to the signup form
+        const signupForm = document.querySelector('.sign-up form');
+        signupForm.addEventListener('submit', function(event) {
+            // Call the signup function when the form is submitted
+            signup(event);
+        });
+    </script>
+</body>
+
+</html>
